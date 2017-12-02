@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	background-color: black;
+	font-size: 8px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+section {
+	min-height: 100vh;
+}
+
+#logo {
+	width: 150px;
+	height: 150px;
+	position: fixed;
+}
+
+#mainContainer {
+/*	display: flex;*/
+/*
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+*/
+}
+
+#headerContainer {
+	width: 100%;
+	padding: 20px 50px;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+#logoContainer {
+	width: 1420px;
+	margin-bottom: 50px;
+}
+
+.textContainer, .tableContainer  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 50px 50px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	font-size: 5.5rem;	
+}
+
+.mainTitle {
+	line-height: 6rem;
+}
+
+.tableOfContent {
+	font-size: 2rem;
+	font-family: 'Barlow', sans-serif;
+}
+
+.tableOfContent .lineSeparator {
+	width: 33%;
+	border-top: solid 2.5px #FFFFFF;
+	margin: 20px 0px;
+}
+
+.tableOfContent .tableIndex {
+	color: rgba(0,229,255,1.00);
+}
+
+.subTitle {
+	font-size: 5rem;
+	margin-bottom: 20px;
+	line-height: 5rem;
+}
+
+.mainText {
+	font-family: 'Barlow', sans-serif;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.secondText {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.quoteText {
+	font-size: 2rem;
+	color: #00FFEB;
+	margin-top: 20px;	
+}
+
+.sectionLink {
+	font-size: 2rem;
+	margin-top: 20px;	
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #1400FF;
+}
+
+/* 1025px and bigger */
+
+
+@media only screen and (min-width: 480px) {
+	html { font-size: 16px;}
+	.textContainer, .tableContainer { padding: 100px 100px; }
+/*
+	.textContainer {width: 50%;}
+	.mainText {font-size: 1rem;}
+	.subTitle {font-size: 4rem;}
+	.secondText {font-size: 1rem;}
+	.sectionLink {font-size: 1rem;}
+	.quoteText {font-size: 1rem;}
+*/
+}
