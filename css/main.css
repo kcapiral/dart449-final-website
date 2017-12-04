@@ -12,6 +12,11 @@ html, body {
 	font-family: 'Share Tech Mono', monospace;
 }
 
+body {
+	max-height: 100vh;
+	overflow: hidden;
+}
+
 header {
 	width: 100vw;
 	height: 75px;
