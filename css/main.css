@@ -175,16 +175,27 @@ ul {
 	position: relative;
 }
 
-.svg-square-text {
+.svg-text {
 	position: absolute;
 	display: none;
+	z-index: 2;
+	font-size: 1rem;
+}
+
+.svg-square-text {
 	width: 85%;
 	height: 85%;
-	z-index: 2;
 	padding: 50px;
 	top: 0;
 	left: 0;
-	font-size: 1rem;
+}
+
+.svg-circle-text {
+	width: 85%;
+	height: 100%;
+	padding: 13%;
+	top: 0;
+	left: 0;
 }
 
 .toggleParent {
@@ -222,6 +233,48 @@ a:hover {
     justify-content: center;
 }
 
+#section6-container {
+	width: 100%;
+}
+
+#section6 .sectionContainer {
+	flex-direction: column;
+	align-items: left;
+}
+
+#section6 .sectionContiner > div {
+	width: 80%;
+}
+
+.get-started-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.circle-icon {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: blue;
+}
+
+.content-column .number {
+	font-size: 10rem;
+	color: blue;
+}
+
+.content-column {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+	font-size: 2rem;
+}
+
 /*TABLET: 480PX AND HIGHER*/
 @media only screen and (min-width: 480px) {
 	html { font-size: 16px;}
@@ -256,6 +309,7 @@ a:hover {
 	.mobileHidden {display: block;}
 	.sectionContainer {display: flex;}
 	.sectionContainer > div {flex-grow: 1; width: 50%;}
+	#section6-container > .get-started-container {margin: 0 auto;width: 80%; font-size: 1rem;}
 	.col {padding-right: 100px;}
 	.tableOfContent {font-size: 2rem; z-index: 100;}
 
@@ -292,6 +346,11 @@ a:hover {
 	.svg-text {font-size: 1rem !important;}
 
 	.svg-square-text {display: block;}
+	.svg-circle-text {display: block;}
+
+	.get-started-container {flex-direction: row;}
+	.circle-icon {width: 130px; height:130px;}
+	.content-column .number {font-size:5rem;}
 }
 
 /*DESKTOP: 1920PX AND HIGHER*/
@@ -311,4 +370,6 @@ a:hover {
 	position: fixed;
 	padding: 0px 0px 0px 25px;
 	}
+
+	.circle-icon {width: 250px; height:250px;}
 }
