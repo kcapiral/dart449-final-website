@@ -20,19 +20,23 @@ $(document).ready(function() {
 		window.addEventListener('wheel', function(e) {
 			if (!didScroll) {
 				didScroll = true;
-				
+
 				currentPageIdentifier(e.deltaY);
 				$(window).scrollTop($(pages[pageNum]).offset().top);
 
 				setTimeout(function() {
 					didScroll = false;
-				}, 1000);
+				}, 1750);
 			}
+		});
+	} else {
+		$('.toggleParent').click(function(){ 
+			$(this).next().toggle("slow");
 		});
 	}
 
-	$('.toggleParent').click(function(){ 
-		$(this).next().toggle("slow");
+	$('#nav-burger').click(function() {
+		$("#nav-overlay").toggleClass("open");
 	});
 });
 
@@ -50,7 +54,19 @@ function currentPageIdentifier(scrollDirection) {
 }
 
 function scrollToAnchor(anchor) {
+	pageNum = anchor - 1;
+	let animateTime = 0;
+
+	if ($(window).width() < 1024) {
+		animateTime = 1000;
+	} 
+
 	$('html, body').animate({
-        scrollTop: $("#" + anchor).offset().top
-    }, 1000);
+        scrollTop: $("#section" + anchor).offset().top
+    }, animateTime);
+}
+
+function showText(id) {
+	$('.svg-text-child').css('display', 'none');
+	$('#'+id).toggle();
 }
