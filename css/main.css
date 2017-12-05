@@ -94,7 +94,7 @@ ul {
 }
 
 #mainContainer {
-	background: url("http://www.zbrushcentral.com/attachment.php?attachmentid=250263");
+	background: url("./graphics/grid.png");
     background-size: contain;
     background-repeat: repeat;
 }
@@ -306,10 +306,10 @@ a:hover {
 	#nav-overlay {width: 50%;}
 	section {padding: 100px; height: 100vh;}
 	svg text {display: block;}
-	.mobileHidden {display: block;}
+	.mobileHidden {display: block; color: #1400FF}
 	.sectionContainer {display: flex;}
 	.sectionContainer > div {flex-grow: 1; width: 50%;}
-	#section6-container > .get-started-container {margin: 0 auto;width: 80%; font-size: 1rem;}
+	#section6-container > .get-started-container {margin: 0 auto; width: 80%; font-size: 1rem;}
 	.col {padding-right: 100px;}
 	.tableOfContent {font-size: 2rem; z-index: 100;}
 
@@ -339,9 +339,7 @@ a:hover {
 		transform: translateY(-50%);
 	}
 
-	.subTitle br {
-		display: block;
-	}
+	.subTitle br {display: block;}
 
 	.svg-text {font-size: 1rem !important;}
 
@@ -350,13 +348,15 @@ a:hover {
 
 	.get-started-container {flex-direction: row;}
 	.circle-icon {width: 130px; height:130px;}
-	.content-column .number {font-size:5rem;}
+	.content-column .number {font-size: 5rem; color: #00FFEB}
+	.column-text {font-size: 1rem; 	font-family: 'Barlow', sans-serif;}
+	.column-title {font-size: 1.5rem; font-family: 'Share Tech Mono', monospace;}
 }
 
 /*DESKTOP: 1920PX AND HIGHER*/
 @media only screen and (min-width: 1920px) {
-	.mainTitle {font-size: 9rem; line-height: 9rem;}
-	.tableOfContent {font-size: 3rem;}
+	.mainTitle {font-size: 8rem; line-height: 8rem;}
+	.tableOfContent {font-size: 2rem;}
 	.mainText {font-size: 2rem;}
 	.subTitle {font-size: 4rem; line-height: 4.5rem;}
 	.secondText {font-size: 2rem;}
