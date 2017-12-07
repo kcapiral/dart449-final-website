@@ -69,5 +69,8 @@ function scrollToAnchor(anchor) {
 
 function showText(id) {
 	$('.svg-text-child').css('display', 'none');
-	$('#'+id).toggle();
+	$('#'+id).css({
+	    "opacity":"0",
+	    "display":"block",
+	}).show().animate({opacity:1});
 }
