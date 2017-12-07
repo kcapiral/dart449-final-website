@@ -361,7 +361,8 @@ a:hover {
 	.sectionContainer {display: flex;}
 	.sectionContainer > div {flex-grow: 1;}
 	#section6-container > .get-started-container {width: 100%; font-size: 1rem;}
-	.col {padding-right: 100px;}
+	.col {flex-basis: 100%; padding-right: 100px;}
+	.graphicContainer {flex-basis: 100%;}
 	.tableOfContent {font-size: 2rem;}
 
 	/*.graphicContainer {height: 100%;}*/
@@ -382,7 +383,7 @@ a:hover {
 		position: absolute;
 	}
 
-	.svg-text-child {display: none; font-size: 1.3rem; 	font-family: 'Barlow', sans-serif;}
+	.svg-text-child {display: none; font-size: 1rem; 	font-family: 'Barlow', sans-serif;}
 
 	.graphicFull svg {
 		position: absolute;
@@ -397,13 +398,13 @@ a:hover {
 	.svg-square-text {display: block;}
 	.svg-circle-text {display: block;}
 
-	.get-started-container {flex-direction: row; flex-grow: unset;}
+	.get-started-container {flex-direction: row; flex-grow: unset; justify-content: center;}
 	.circle-icon {width: 130px; height:130px;}
 	.content-column .number {font-size: 5rem; color: #00FFEB}
 	.column-text {font-size: 0.8rem; text-align: left; width: 200px;}
 	.column-title {font-size: 1.5rem; text-align: center;}
-	.advText {color: blue; font-size: 1.2rem}
-	.disText {color: #00FFEB; font-size: 1.2rem}
+	.advText {color: blue; font-size: 1rem}
+	.disText {color: #00FFEB; font-size: 1rem}
 	.circleTextBlue {color: blue;}
 	#nav-overlay {z-index: 100;}
 	ul {font-size: 2rem;}
